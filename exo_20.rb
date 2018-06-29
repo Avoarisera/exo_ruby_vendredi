@@ -1,9 +1,10 @@
 puts "salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu?"
-étages =gets.chomp
-
-1.upto(étages) do |i|
-	i.times {
+étages =gets.to_i
+i = 1 
+while i <=étages
+	1.upto(i) do 
 		print "#"
-	}
-	print "\n"
+	end
+	puts
+	i +=1
 end
